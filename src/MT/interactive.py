@@ -93,7 +93,7 @@ def main(*args, src):
 
     # Initialize generator
     try: 
-        generator = task.build_generator(args)
+        generator = task.build_generator(model, args)
     except: 
         print(args) 
         print("ERROR") 
