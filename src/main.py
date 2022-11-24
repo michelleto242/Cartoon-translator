@@ -1,3 +1,4 @@
+print("HELLO") 
 from MT.interactive.py import translator 
 from OCR.detector.py import detect_text_from_byte
 from PargraphGenerating.insert_text import remover, inpainting
