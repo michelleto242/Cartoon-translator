@@ -182,6 +182,7 @@ def translator(inputs, path='ckpt/checkpoint77.pt', vocab='wiki.ko.model', data=
      tensorboard_logdir='', threshold_loss_scale=None, tokenizer=None, truncate_source=False, unkpen=0, unnormalized=False, 
      upsample_primary=1, user_dir=None, warmup_updates=0, weight_decay=0.0)
     args = parser.parse_args([])
+    print("HELLO")
     return main(args, inputs)
     
 
