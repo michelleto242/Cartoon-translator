@@ -33,7 +33,7 @@ def buffered_read(input, buffer_size):
         yield buffer
 
 
-def make_batches(lines, args, task, max_positions, encode_fn):
+def make_batches(lines, *args, task, max_positions, encode_fn):
     tokens = [
         task.source_dictionary.encode_line(
             encode_fn(src_str), add_if_not_exist=False
@@ -54,9 +54,9 @@ def make_batches(lines, args, task, max_positions, encode_fn):
         )
 
 
-def main(args, src):
+def main(*args, src):
     ret = []
-    utils.import_user_module(args)
+    utils.import_user_module(*args)
 
     if args.max_tokens is None and args.max_sentences is None:
         args.max_sentences = 1
