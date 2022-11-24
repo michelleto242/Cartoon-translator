@@ -100,6 +100,7 @@ def main(*args, src):
 
     # Handle tokenization and BPE
     tokenizer = None
+    args.sentencepiece_model = args.sentencepiece_vocab
     bpe = encoders.build_bpe(args)
 
     def encode_fn(x):
