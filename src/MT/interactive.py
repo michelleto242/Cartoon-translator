@@ -92,8 +92,10 @@ def main(*args, src):
             model.cuda()
 
     # Initialize generator
-    print(args)
-    generator = task.build_generator(args)
+    try: 
+        generator = task.build_generator(args)
+    except: 
+        print("ERROR") 
 
     # Handle tokenization and BPE
     tokenizer = None
