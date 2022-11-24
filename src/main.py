@@ -1,5 +1,5 @@
-from OCR.detector.py import detect_text_from_byte
 from MT.interactive import translator 
+from OCR.detector import detect_text_from_byte
 from PargraphGenerating.insert_text import remover, inpainting
 from PargraphGenerating.combine_images import PreProcessByteImages
 from crawler import byteImgDownload
