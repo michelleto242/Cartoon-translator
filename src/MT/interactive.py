@@ -92,6 +92,7 @@ def main(*args, src):
             model.cuda()
 
     # Initialize generator
+    print(args)
     generator = task.build_generator(args)
 
     # Handle tokenization and BPE
