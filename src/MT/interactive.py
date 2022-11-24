@@ -95,6 +95,7 @@ def main(*args, src):
     try: 
         generator = task.build_generator(args)
     except: 
+        print(args) 
         print("ERROR") 
 
     # Handle tokenization and BPE
